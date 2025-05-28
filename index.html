@@ -1,0 +1,95 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>MD Riyajul Islam | Portfolio</title>
+  <link rel="stylesheet" href="style.css"/>
+  <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;600&display=swap" rel="stylesheet">
+</head>
+<body>
+
+  <!-- Sidebar Nav -->
+  <div class="sidebar">
+    <h2>👨‍💻 Riyaz</h2>
+    <ul>
+      <li><a href="#about">About</a></li>
+      <li><a href="#skills">Skills</a></li>
+      <li><a href="#projects">Projects</a></li>
+      <li><a href="#certificates">Certificates</a></li>
+      <li><a href="resume.pdf" target="_blank">Resume</a></li>
+    </ul>
+  </div>
+
+  <!-- Header -->
+  <header>
+    <img src="images/profile.jpg" alt="Riyaz" class="profile-pic">
+    <h1>MD Riyajul Islam</h1>
+    <p>Full Stack Developer | Intern @ CollegeTips.in</p>
+    <div class="buttons">
+      <a href="resume.pdf" class="btn" target="_blank">📄 View Resume</a>
+      <a href="https://github.com/Zack7091" class="btn" target="_blank">💻 GitHub</a>
+      <a href="https://linkedin.com/in/md-riyajul-islam-36b84b34b" class="btn" target="_blank">🔗 LinkedIn</a>
+    </div>
+  </header>
+
+  <!-- About -->
+  <section id="about">
+    <h2>👋 About Me</h2>
+    <p>Hi, I'm <strong>MD Riyajul Islam</strong>, pursuing MCA from Jain University with AI/ML specialization (IBM). I'm passionate about full stack development, especially in React, Node.js, and building scalable APIs. Currently interning at CollegeTips.in, I aspire to be a future-ready software engineer!</p>
+  </section>
+
+  <!-- Skills -->
+  <section id="skills">
+    <h2>🛠️ Skills</h2>
+    <div class="skill-category">
+      <button class="skill-btn">Frontend</button>
+      <p>HTML, CSS, JavaScript, React, Next.js, TypeScript</p>
+    </div>
+    <div class="skill-category">
+      <button class="skill-btn">Backend</button>
+      <p>Node.js, Express.js, Python</p>
+    </div>
+    <div class="skill-category">
+      <button class="skill-btn">Database</button>
+      <p>MySQL, PostgreSQL, MongoDB</p>
+    </div>
+    <div class="skill-category">
+      <button class="skill-btn">API Testing</button>
+      <p>Postman, REST APIs</p>
+    </div>
+  </section>
+
+  <!-- Projects -->
+  <section id="projects">
+    <h2>🚀 Projects</h2>
+    <div class="project" onclick="openProject('https://github.com/Zack7091/poke-explorer')">
+      <h3>🎮 Poke Explorer</h3>
+      <p>React App using Pokémon API</p>
+    </div>
+    <div class="project" onclick="openProject('https://github.com/Zack7091/school-api')">
+      <h3>🏫 School API</h3>
+      <p>Node.js + Express + PostgreSQL</p>
+    </div>
+    <div class="project" onclick="openProject('https://github.com/Zack7091/personal-analytics-habit-tracker')">
+      <h3>📊 Habit Tracker</h3>
+      <p>MongoDB + Node + Chart.js</p>
+    </div>
+  </section>
+
+  <!-- Certificates -->
+  <section id="certificates">
+    <h2>📜 Certificates</h2>
+    <div class="cert-gallery">
+      <img src="images/certificate1.jpg" alt="Cert 1">
+      <!-- <img src="images/certificate2.jpg" alt="Cert 2"> -->
+    </div>
+  </section>
+
+  <footer>
+    <p>© 2025 MD Riyajul Islam. All rights reserved.</p>
+  </footer>
+
+  <script src="script.js"></script>
+</body>
+</html>
