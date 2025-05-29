@@ -2,93 +2,127 @@
 <html lang="en">
 <head>
   <meta charset="UTF-8" />
-  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
   <title>MD Riyajul Islam | Portfolio</title>
-  <link rel="stylesheet" href="style.css"/>
-  <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;600&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="style.css" />
 </head>
 <body>
 
-  <!-- Sidebar Nav -->
-  <div class="sidebar">
-    <h2>👨‍💻 Riyaz</h2>
-    <ul>
-      <li><a href="#about">About</a></li>
-      <li><a href="#skills">Skills</a></li>
-      <li><a href="#projects">Projects</a></li>
-      <li><a href="#certificates">Certificates</a></li>
-      <li><a href="resume.pdf" target="_blank">Resume</a></li>
-    </ul>
-  </div>
+  <!-- 🔷 NAVIGATION -->
+  <nav class="navbar">
+    <div class="logo">💻 Riyaz</div>
+    <div class="nav-links">
+      <a href="#about">About</a>
+      <a href="#skills">Skills</a>
+      <a href="#projects">Projects</a>
+      <a href="#certificates">Certificates</a>
+      <a href="#photo-gallery">Gallery</a>
+      <a href="#contact">Contact</a>
+    </div>
+  </nav>
 
-  <!-- Header -->
-  <header>
-    <img src="images/profile.jpg" alt="Riyaz" class="profile-pic">
+  <!-- 🔷 HERO SECTION -->
+  <header class="hero">
+    <img src="images/profile.jpg" alt="Profile" class="profile-pic" />
     <h1>MD Riyajul Islam</h1>
     <p>Full Stack Developer | Intern @ CollegeTips.in</p>
-    <div class="buttons">
+    <div class="hero-btns">
       <a href="resume.pdf" class="btn" target="_blank">📄 View Resume</a>
       <a href="https://github.com/Zack7091" class="btn" target="_blank">💻 GitHub</a>
-      <a href="https://linkedin.com/in/md-riyajul-islam-36b84b34b" class="btn" target="_blank">🔗 LinkedIn</a>
+      <a href="https://www.linkedin.com/in/md-riyajul-islam-36b84b34b" class="btn" target="_blank">🔗 LinkedIn</a>
     </div>
   </header>
 
-  <!-- About -->
-  <section id="about">
+  <!-- 🔷 ABOUT -->
+  <section id="about" class="section">
     <h2>👋 About Me</h2>
-    <p>Hi, I'm <strong>MD Riyajul Islam</strong>, pursuing MCA from Jain University with AI/ML specialization (IBM). I'm passionate about full stack development, especially in React, Node.js, and building scalable APIs. Currently interning at CollegeTips.in, I aspire to be a future-ready software engineer!</p>
+    <p>Hi, I'm <strong>MD Riyajul Islam</strong>, an MCA student from Jain University (IBM AI/DL specialization). Passionate about web development, coding, and real-world tech solutions.</p>
   </section>
 
-  <!-- Skills -->
-  <section id="skills">
+  <!-- 🔷 SKILLS -->
+  <section id="skills" class="section">
     <h2>🛠️ Skills</h2>
-    <div class="skill-category">
-      <button class="skill-btn">Frontend</button>
-      <p>HTML, CSS, JavaScript, React, Next.js, TypeScript</p>
+    <div class="skill-block">
+      <h3>Frontend</h3>
+      <p>HTML, CSS, JavaScript, React.js, Next.js, TypeScript</p>
     </div>
-    <div class="skill-category">
-      <button class="skill-btn">Backend</button>
+    <div class="skill-block">
+      <h3>Backend</h3>
       <p>Node.js, Express.js, Python</p>
     </div>
-    <div class="skill-category">
-      <button class="skill-btn">Database</button>
+    <div class="skill-block">
+      <h3>Database</h3>
       <p>MySQL, PostgreSQL, MongoDB</p>
     </div>
-    <div class="skill-category">
-      <button class="skill-btn">API Testing</button>
-      <p>Postman, REST APIs</p>
+    <div class="skill-block">
+      <h3>Tools & API Testing</h3>
+      <p>Postman, GitHub</p>
     </div>
   </section>
 
-  <!-- Projects -->
-  <section id="projects">
+  <!-- 🔷 PROJECTS -->
+  <section id="projects" class="section">
     <h2>🚀 Projects</h2>
-    <div class="project" onclick="openProject('https://github.com/Zack7091/poke-explorer')">
+    <div class="project">
       <h3>🎮 Poke Explorer</h3>
-      <p>React App using Pokémon API</p>
+      <p>A React-based app using Pokémon API to display data beautifully.</p>
+      <a href="https://github.com/Zack7091/poke-explorer" class="btn" target="_blank">GitHub</a>
     </div>
-    <div class="project" onclick="openProject('https://github.com/Zack7091/school-api')">
-      <h3>🏫 School API</h3>
-      <p>Node.js + Express + PostgreSQL</p>
+    <div class="project">
+      <h3>🏫 School Management API</h3>
+      <p>Backend RESTful API using Node.js, Express.js and PostgreSQL.</p>
+      <a href="https://github.com/Zack7091/school-api" class="btn" target="_blank">GitHub</a>
     </div>
-    <div class="project" onclick="openProject('https://github.com/Zack7091/personal-analytics-habit-tracker')">
-      <h3>📊 Habit Tracker</h3>
-      <p>MongoDB + Node + Chart.js</p>
+    <div class="project">
+      <h3>📊 Personal Habit Tracker</h3>
+      <p>A personal analytics tracker built with MongoDB and Node.</p>
+      <a href="https://github.com/Zack7091/personal-analytics-habit-tracker" class="btn" target="_blank">GitHub</a>
+      <!-- Project 4: CollegeTips Photo Gallery -->
+<div class="project">
+  <h3>📸 CollegeTips Photo Gallery</h3>
+  <p>An interactive and responsive photo gallery created using HTML, CSS, and JavaScript, showcasing the fun vibes of CollegeTips culture.</p>
+  <a href="https://stellular-tarsier-39343d.netlify.app" class="btn" target="_blank">🌐 Live Project</a>
+</div>
+
     </div>
   </section>
 
-  <!-- Certificates -->
-  <section id="certificates">
+  <!-- 🖼️ CollegeTips Photo Gallery with Lightbox -->
+<section id="photo-gallery" class="section">
+  <h2>📸 CollegeTips Photo Gallery</h2>
+  <div class="gallery-grid">
+    <img src="images/gallery1.jpg" alt="Gallery Image 1" onclick="openLightbox(this)" />
+    <img src="images/gallery2.jpg" alt="Gallery Image 2" onclick="openLightbox(this)" />
+    <img src="images/gallery3.jpg" alt="Gallery Image 3" onclick="openLightbox(this)" />
+  </div>
+
+  <!-- Lightbox Overlay -->
+  <div id="lightbox" class="lightbox" onclick="closeLightbox()">
+    <span class="close">&times;</span>
+    <img id="lightbox-img" src="" alt="Full View" />
+  </div>
+</section>
+
+
+  <!-- 🔷 CERTIFICATES -->
+  <section id="certificates" class="section">
     <h2>📜 Certificates</h2>
-    <div class="cert-gallery">
-      <img src="images/certificate1.jpg" alt="Cert 1">
-      <!-- <img src="images/certificate2.jpg" alt="Cert 2"> -->
+    <div class="certificate-grid">
+      <img src="images/certificate1.jpg" alt="Certificate 1" />
+      <!-- <img src="images/certificate2.jpg" alt="Certificate 2" /> -->
     </div>
   </section>
 
-  <footer>
-    <p>© 2025 MD Riyajul Islam. All rights reserved.</p>
-  </footer>
+  <!-- 🔷 CONTACT SECTION -->
+  <section id="contact" class="contact-section">
+    <h2>📩 Contact Me</h2>
+    <p>If you're a recruiter, HR, or just someone awesome — feel free to reach out!</p>
+    <div class="contact-links">
+      <a href="mailto:riyajul966@gmail.com" class="btn-contact">📧 Email Me</a>
+      <a href="https://stellular-tarsier-39343d.netlify.app/" class="btn-contact" target="_blank">🌐 Live Portfolio</a>
+    </div>
+  </section>
+  
 
   <script src="script.js"></script>
 </body>

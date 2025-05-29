@@ -1,13 +1,11 @@
-function openProject(link) {
-  window.open(link, '_blank');
+function openLightbox(img) {
+  const lightbox = document.getElementById("lightbox");
+  const lightboxImg = document.getElementById("lightbox-img");
+  lightbox.style.display = "flex";
+  lightboxImg.src = img.src;
 }
 
-// Smooth scroll sidebar links
-document.querySelectorAll('.sidebar a[href^="#"]').forEach(anchor => {
-  anchor.addEventListener('click', function (e) {
-    e.preventDefault();
-    document.querySelector(this.getAttribute('href')).scrollIntoView({
-      behavior: 'smooth'
-    });
-  });
-});
+function closeLightbox() {
+  const lightbox = document.getElementById("lightbox");
+  lightbox.style.display = "none";
+}
